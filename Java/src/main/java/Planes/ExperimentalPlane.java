@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class ExperimentalPlane extends Plane{
 
-    private ExperimentalTypes experimentalType;
+    private ExperimentalType experimentalType;
     private ClassificationLevel classificationLevel;
 
     public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes type, ClassificationLevel classificationLevel) {

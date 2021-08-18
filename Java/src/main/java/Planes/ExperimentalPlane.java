@@ -7,12 +7,12 @@ import java.util.Objects;
 public class ExperimentalPlane extends Plane{
 
     private ExperimentalType experimentalType;
-    private ClassificationLevel classificationLevel;
+    private SecrecyType secrecyType;
 
-    public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalType type, ClassificationLevel classificationLevel) {
+    public ExperimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalType type, SecrecyType secrecyTypel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.experimentalType = type;
-        this.classificationLevel = classificationLevel;
+        this.secrecyType = secrecyType;
     }
 
     public ClassificationLevel getClassificationLevel(){
@@ -21,8 +21,8 @@ public class ExperimentalPlane extends Plane{
 
     public ExperimentalTypes getExperimentalType() { return experimentalType; }
 
-    public void setClassificationLevel(ClassificationLevel classificationLevel){
-        this.classificationLevel = classificationLevel;
+    public void setSecrecyType(SecrecyType secrecyType){
+        this.secrecyType = secrecyType;
     }
 
     @Override
@@ -31,11 +31,11 @@ public class ExperimentalPlane extends Plane{
         if (obj == null || getClass()!=obj.getClass()) return false;
         if (!super.equals(obj)) return false;
         ExperimentalPlane plane = (ExperimentalPlane) obj;
-        return experimentalType == plane.experimentalType && classificationLevel==plane.classificationLevel;
+        return experimentalType == plane.experimentalType && secrecyType==plane.secrecyType;
     }
 
     @Override
-    public int hashCode() { return Objects.hash(super.hashCode(), experimentalType, classificationLevel); }
+    public int hashCode() { return Objects.hash(super.hashCode(), experimentalType, secrecyType); }
 
     @Override
     public String toString() {

@@ -1,5 +1,5 @@
 package models;
 
-public enum ClassificationLevel {
+public enum SecrecyType {
     UNCLASSIFIED, CONFIDENTIAL, SECRET, TOP_SECRET
 }

@@ -19,7 +19,7 @@ public class ExperimentalPlane extends Plane{
         return secrecyType;
     }
 
-    public ExperimentalTypes getExperimentalType() { return experimentalType; }
+    public ExperimentalType getExperimentalType() { return experimentalType; }
 
     public void setSecrecyType(SecrecyType secrecyType){
         this.secrecyType = secrecyType;

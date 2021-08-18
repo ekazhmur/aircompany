@@ -15,8 +15,8 @@ public class ExperimentalPlane extends Plane{
         this.secrecyType = secrecyType;
     }
 
-    public ClassificationLevel getClassificationLevel(){
-        return classificationLevel;
+    public SecrecyType getSecrecyType(){
+        return secrecyType;
     }
 
     public ExperimentalTypes getExperimentalType() { return experimentalType; }
